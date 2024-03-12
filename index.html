@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verificar (){
+        let user = document.getElementById("user").value;
+        let pass = document.getElementById("pass").value;
+
+        if(user == ""|| pass == ""){
+            alert("Preencha os campos corretamente!");
+        }else{
+            alert("Bem-Vindo" + user);
+        }
+    }
+    </script>
+</head>
+<body>
+  <form method="#" action="#">
+      <h1>Login</h1>
+      <label for="user">Usuário</label>
+      <imput type="text" id="user">
+      <iabel for="pass" >Senha</imput>
+      <input type="password" id="pass">
+      <imput type="submit" value="Enviar" onclick="verificar()">
+      <imput type="reset" value="limpar">
+     </form>
+</body>
+</html>
